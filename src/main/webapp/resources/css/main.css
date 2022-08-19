@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 초기화 셋팅 */
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ONE-Mobile-POP';
+}
+
+h1,h2,h3,h4,p,span { margin:0; padding: 0;}
+
+ul,li,ol {text-decoration: none; list-style: none}
+
+a { text-decoration: none;}
+
+/* 헤더 CSS */
+#header {
+  position: relative;
+  top: 0;
+  background: #CC9B6D;
+  padding: 18px 15px 18px 15px;
+  margin: 0;
+}
+
+#header #logo {
+  font-size: 32px;
+  text-align: left;
+  line-height: 32px;
+  color: #F2DAC3;
+  font-weight: bold;
+}
+
+#header #logo .nav {
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 24px);
+  margin: 0 auto;
+}
+
+#header .nav {
+  position: relative;
+  width: 100%;
+}
+
+#header .nav a {
+  font-size: 24px;
+  color: white;
+}
+
+#header .nav ul {
+  position: absolute;
+  float: right;
+  box-sizing: border-box;
+  top: -48px;
+  right: 0;
+}
+
+#header .nav ul li {
+  float: left;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+
+/* 메인 페이지 */
+#wrap {
+  display: flex;
+  width: 100%;
+  background: #F3E9DD;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#wrap .content {
+  display: flex;
+  margin: 50px;
+  width: 33%;
+  height: 200px;
+  border: 3px solid #CC9B6D;
+  background: #EEC373;
+  border-radius: 100px;
+}
+
+#wrap .content .text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#wrap .content .text .money_check {
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 15px;
+    color: white;
+    background: #362222;
+    cursor: pointer;
+}
+
+
+/* 계좌 생성 CSS */
+
+#add_account_wrap {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#add_account_wrap #add_form {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#add_account_wrap #add_form h1 {
+  margin-bottom: 50px;
+}
+
+#add_form select {
+  margin-bottom: 50px;
+  width: 300px;
+  height: 50px;
+  padding: 15px 30px 15px 15px;
+  appearance: none;
+  background: #D8CCA3;
+  opacity: .5;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  transition: .3s;
+}
+
+#add_form select:hover {
+  opacity: 1;
+}
+
+#add_account_wrap #add_form select:focus {
+  border: 1px solid #FAC213;
+}
+
+#submit_btn {
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+  background: #D8CCA3;
+  cursor: pointer;
+  opacity: .5;
+  transition: .3s;
+  font-family: 'ONE-Mobile-POP';
+}
+#submit_btn:hover {
+  opacity: 1;
+  border-color: white;
+}
+
+/* 계좌 생성 성공 페이지 */
+#add_account_wrap #success {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#add_account_wrap #success h1 {
+  margin-top: 250px;
+  margin-bottom: 30px;
+}
+
+#add_account_wrap #success p {
+  width: 100%;
+  background: #BF9270;
+  font-size: 30px;
+  line-height: 46px;
+  padding: 5px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* 이체 */
+
+#wrap #add_form .transferTitle {
+  font-weight: 100;
+  margin: 50px 0 50px 0;
+}
+
+.text{
+  font-size: 20px;
+}
+
+.transferUl li {
+  margin-bottom: 20px;
+}
+
+.transferUl li:nth-child(2) {
+  margin-left: 25px;
+}
+
+.transferUl li:nth-child(3) {
+  margin-left: -35px;
+}
+
+.transferUl li input {
+  width: 200px;
+  height: 30px;
+}

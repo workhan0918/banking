@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box; /*길이에 border까지 포함*/
+    background-color: #ececec;
+    font-family: 'ONE-Mobile-POP';
+   }
+
+.borderBox {
+    background-color: #F3E9DD;
+    width: 550px;
+    height: 600px;
+    margin: 180px auto; /*블록 요소 가운데 정렬*/
+    padding: 70px;
+    border: 1.5px solid #cecece;
+    border-radius: 2px;
+    position: relative; /*하단 텍스트 p.text에 position: absolute; 주기 위해*/
+}
+
+h1 {
+    background-color: #F3E9DD;
+    font-size: 35px;
+    text-align: center; /*텍스트 가운데 정렬*/
+    margin: 0 0 50px 0;
+    color: #DAB88B;
+}
+
+.login {
+    background-color: #F3E9DD;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/*input 안의 텍스트 색깔 바꾸기*/
+input::placeholder {
+    color: #a1a1a1;
+}
+
+.btn {
+    background-color: #DAB88B;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.text {
+    background-color: #F3E9DD;
+    width: 195px;
+    color: #4A3933;
+    text-align: center;
+    text-decoration-line: none; /*a 링크 밑줄 없애기*/
+    position: absolute; /*부모인 .border에 relative를 줌*/
+    left: 170px;
+    right: 0; /*left:0;과 right: 0;을 동시에 주면 width:100% 준 것과 같은 효과*/
+    bottom: 200px;
+}
